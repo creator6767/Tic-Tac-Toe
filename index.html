@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tic Tac Toe</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="game">
+
+        <header class="game-header">
+            <p class="eyebrow">ARCADE</p>
+            <h1>TIC <span>TAC</span> TOE</h1>
+            <p class="turn" id="turnText">X's turn</p>
+        </header>
+
+
+        <section class="scoreboard">
+
+            <div class="score-card x-card">
+                <span>PLAYER X</span>
+                <strong id="scoreX">0</strong>
+            </div>
+
+            <div class="score-card draw-card">
+                <span>DRAWS</span>
+                <strong id="scoreDraw">0</strong>
+            </div>
+
+            <div class="score-card o-card">
+                <span>PLAYER O</span>
+                <strong id="scoreO">0</strong>
+            </div>
+
+        </section>
+
+
+        <section class="board-wrapper">
+
+            <div class="board" id="board">
+
+                <button class="cell" data-index="0"></button>
+                <button class="cell" data-index="1"></button>
+                <button class="cell" data-index="2"></button>
+
+                <button class="cell" data-index="3"></button>
+                <button class="cell" data-index="4"></button>
+                <button class="cell" data-index="5"></button>
+
+                <button class="cell" data-index="6"></button>
+                <button class="cell" data-index="7"></button>
+                <button class="cell" data-index="8"></button>
+
+                <div class="win-line" id="winLine"></div>
+
+            </div>
+
+        </section>
+
+
+        <button class="restart" id="restart">
+            NEW GAME
+        </button>
+
+        <p class="message" id="message"></p>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
